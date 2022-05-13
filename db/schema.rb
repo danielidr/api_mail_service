@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2022_05_13_162156) do
     t.string "to"
     t.string "subject"
     t.text "content"
-    t.boolean "status"
+    t.boolean "status", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

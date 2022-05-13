@@ -15,5 +15,8 @@ class Email < ApplicationRecord
         puts response.status_code
         puts response.body
         puts response.headers
+
+        # Cambia status
+        self.update(status: true)
     end
 end

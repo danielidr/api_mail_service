@@ -8,9 +8,10 @@ module V1
             render json: @emails
         end
 
-        # def send
-
-        # end
+        def send
+            @email = Email.first
+            @email.send_email
+        end
 
         # def update
         #     if @email.update(email_params)
